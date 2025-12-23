@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Inter", "SF Pro Text", system-ui, sans-serif;
+}
+
+.section-card {
+  @apply rounded-3xl border border-moss-100 bg-white/90 p-6 shadow-soft backdrop-blur;
+}
+
+@keyframes bloom-scale {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.flower-bloom {
+  animation: bloom-scale 0.35s ease-out;
+}
